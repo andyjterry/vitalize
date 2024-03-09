@@ -1,0 +1,27 @@
+
+  .debug {
+    div {
+      @apply border border-red-400 border-dashed;
+    }
+    span {
+      @apply border border-blue-400 border-dashed;
+    }
+    p {
+      @apply text-red-400;
+    }
+    button {
+      @apply border border-green-400 border-dashed;
+    }
+    img {
+      @apply border border-orange-400 border-dashed;
+    }
+    svg {
+      @apply border border-purple-400 border-dashed;
+    }
+    a {
+      @apply border text-amber-600 border-amber-600 border-dashed;
+    }
+    nav {
+      @apply border border-pink-700 border-dashed;
+    }
+  }

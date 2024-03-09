@@ -1,0 +1,66 @@
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+// fade from top
+.fade-top-enter-active {
+  animation: fade-top-enter 0.5s;
+}
+.fade-top-leave-active {
+  animation: fade-top-leave 0.5s;
+}
+@keyframes fade-top-enter {
+  from {
+    transform: translateY(-3vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-top-leave {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-3vh);
+    opacity: 0;
+  }
+}
+
+
+
+
+//Fade in from left
+
+.fade-left-enter-active {
+  animation: fade-left-enter 0.5s;
+}
+.fade-left-leave-active {
+  animation: fade-left-leave 0.5s;
+}
+@keyframes fade-left-enter {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left-leave {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

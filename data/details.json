@@ -1,0 +1,75 @@
+{
+  "details": {
+    "phone": "+447447470471",
+    "email": "hello@brandbadger.com",
+    "address": "114 Lutterworth Road, Newcastle Upon Tyne, NE12 8QS",
+    "town": "Newcastle",
+    "facebook": "https://facebook.com/brandbadger",
+    "instagram": "https://instagram.com/brandbadger",
+    "github": "https://github.com/andyjterry"
+  },
+  "socialMedia": [
+    {
+      "id": 1,
+      "name": "instagram",
+      "description": "https://instagram.com/brandbadger"
+    },
+    {
+      "id": 2,
+      "name": "facebook",
+      "description": "https://facebook.com/brandbadger"
+    },
+    {
+      "id": 3,
+      "name": "github",
+      "description": "https://github.com/andyjterry"
+    },
+    {
+      "id": 4,
+      "name": "Development and Content",
+      "description": "Now, we bring your vision to life. Through coding, testing, and more coding, we ensure a smooth, seamless launch, always keeping you in the loop. This stage also involves gathering all necessary copy, content, and imagery from you to perfectly encapsulate your brand."
+    },
+    {
+      "id": 5,
+      "name": "Go Live",
+      "description": "It's the big day! We launch your site into the digital world. But it’s more than just hitting the 'live' button; we ensure your site is polished, optimized, and ready to wow your audience from the outset. Consider this your digital grand opening."
+    },
+    {
+      "id": 6,
+      "name": "Keep It Rolling",
+      "description": "Our journey doesn’t end at launch. We stick around for a week to ensure everything runs smoothly. Beyond that, we offer retainer services for additional tweaks, updates, or new content, available on an ad hoc basis or through 6-12 month packages, ensuring your site remains fresh and relevant."
+    }
+  ],
+  "steps": [
+    {
+      "id": 1,
+      "name": "Let's Chat",
+      "description": "Kick things off with a chat. Tell us a bit about you and your business, what you're looking for, and how we can lend a hand. We'll draft a clear-cut plan outlining the path to your goals. No jargon, no smoke and mirrors, just straightforward conversation."
+    },
+    {
+      "id": 2,
+      "name": "Proposal and Pricing",
+      "description": "After our initial chat, we'll whip up a realistic plan tailored to your needs and come back to you with our proposal. If everything aligns with your vision and business needs, we’ll sort out the first stage payment, and then it’s all systems go."
+    },
+    {
+      "id": 3,
+      "name": "Plan It Out",
+      "description": "Together, we dive into the details, creating a blueprint that lays the groundwork for your online presence. We’ll discuss layouts, steps, and the technical aspects, all in plain English, ensuring your vision begins to take shape precisely as you imagined."
+    },
+    {
+      "id": 4,
+      "name": "Development and Content",
+      "description": "Now, we bring your vision to life. Through coding, testing, and more coding, we ensure a smooth, seamless launch, always keeping you in the loop. This stage also involves gathering all necessary copy, content, and imagery from you to perfectly encapsulate your brand."
+    },
+    {
+      "id": 5,
+      "name": "Go Live",
+      "description": "It's the big day! We launch your site into the digital world. But it’s more than just hitting the 'live' button; we ensure your site is polished, optimized, and ready to wow your audience from the outset. Consider this your digital grand opening."
+    },
+    {
+      "id": 6,
+      "name": "Keep It Rolling",
+      "description": "Our journey doesn’t end at launch. We stick around for a week to ensure everything runs smoothly. Beyond that, we offer retainer services for additional tweaks, updates, or new content, available on an ad hoc basis or through 6-12 month packages, ensuring your site remains fresh and relevant."
+    }
+  ]
+}
