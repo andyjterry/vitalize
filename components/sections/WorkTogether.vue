@@ -9,79 +9,125 @@
           <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900">Let's work together</h2>
             <p class="mt-2 text-lg leading-8 text-gray-600">Proin volutpat consequat porttitor cras nullam gravida at orci molestie a eu arcu sed ut tincidunt magna.</p>
-            <form action="#" method="POST" class="mt-16">
-              <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                <div>
-                  <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
-                  <div class="mt-2.5">
-                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                  </div>
+            <form @submit.prevent="handleSubmit" method="POST" action="https://formspree.io/f/xrgnldko" class="mt-16 space-y-6">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" v-model="form.name" required>
+            </div>
+            <div>
+              <label for="business-name">Business Name</label>
+              <input type="text" name="business-name" id="business-name" v-model="form.businessName">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" v-model="form.email" required>
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" v-model="form.phone">
+            </div>
+
+            <!-- Dynamic part of the form -->
+            <div v-if="formFlow.length">
+              <label>{{ formFlow[currentStep].question }}</label>
+              <div class="dynamic-form">
+                <div v-for="(option, index) in formFlow[currentStep].options" :key="index" class="flex items-center">
+                  <input type="radio" :id="option.value" :value="option.value" v-model="form.selection" @change="handleSelection(option.value)" class="">
+                  <label for="option.value" class="">
+                    {{ option.text }}
+                  </label>
                 </div>
-                <div>
-                  <label for="last-name" class="block text-sm font-semibold leading-6 text-gray-900">Last name</label>
-                  <div class="mt-2.5">
-                    <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                  </div>
-                </div>
-                <div class="sm:col-span-2">
-                  <label for="email" class="block text-sm font-semibold leading-6 text-gray-900">Email</label>
-                  <div class="mt-2.5">
-                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                  </div>
-                </div>
-                <div class="sm:col-span-2">
-                  <label for="company" class="block text-sm font-semibold leading-6 text-gray-900">Company</label>
-                  <div class="mt-2.5">
-                    <input type="text" name="company" id="company" autocomplete="organization" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                  </div>
-                </div>
-                <div class="sm:col-span-2">
-                  <div class="flex justify-between text-sm leading-6">
-                    <label for="phone" class="block font-semibold text-gray-900">Phone</label>
-                    <p id="phone-description" class="text-gray-400">Optional</p>
-                  </div>
-                  <div class="mt-2.5">
-                    <input type="tel" name="phone" id="phone" autocomplete="tel" aria-describedby="phone-description" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                  </div>
-                </div>
-                <div class="sm:col-span-2">
-                  <div class="flex justify-between text-sm leading-6">
-                    <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">How can we help you?</label>
-                    <p id="message-description" class="text-gray-400">Max 500 characters</p>
-                  </div>
-                  <div class="mt-2.5">
-                    <textarea id="message" name="message" rows="4" aria-describedby="message-description" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
-                  </div>
-                </div>
-                <fieldset class="sm:col-span-2">
-                  <legend class="block text-sm font-semibold leading-6 text-gray-900">Expected budget</legend>
-                  <div class="mt-4 space-y-4 text-sm leading-6 text-gray-600">
-                    <div class="flex gap-x-2.5">
-                      <input id="budget-under-25k" name="budget" value="under_25k" type="radio" class="mt-1 h-4 w-4 border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-600" />
-                      <label for="budget-under-25k">Less than $25K</label>
-                    </div>
-                    <div class="flex gap-x-2.5">
-                      <input id="budget-25k-50k" name="budget" value="25k-50k" type="radio" class="mt-1 h-4 w-4 border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-600" />
-                      <label for="budget-25k-50k">$25K – $50K</label>
-                    </div>
-                    <div class="flex gap-x-2.5">
-                      <input id="budget-50k-100k" name="budget" value="50k-100k" type="radio" class="mt-1 h-4 w-4 border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-600" />
-                      <label for="budget-50k-100k">$50K – $100K</label>
-                    </div>
-                    <div class="flex gap-x-2.5">
-                      <input id="budget-over-100k" name="budget" value="over_100k" type="radio" class="mt-1 h-4 w-4 border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-600" />
-                      <label for="budget-over-100k">$100K+</label>
-                    </div>
-                  </div>
-                </fieldset>
               </div>
-              <div class="mt-10 flex justify-end border-t border-gray-900/10 pt-8">
-                <button type="submit" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Send message</button>
-              </div>
-            </form>
+            </div>
+
+            <div v-if="showAdditionalInfo">
+              <label for="additional-info">Additional Information</label>
+              <textarea id="additional-info" name="additional-info" v-model="form.additionalInfo" rows="4"></textarea>
+            </div>
+
+            <div v-if="showBudgetSlider">
+              <label for="budget">Your Budget</label>
+              <input type="range" id="budget" name="budget" v-model="form.budget" min="500" max="10000" class="mt-2.5 block w-full">
+              <p class="text-right text-sm text-gray-600">£{{ form.budget }}</p>
+            </div>
+
+            <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-orange-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Send Inquiry</button>
+          </form>
           </div>
         </div>
       </div>
     </div>
   </template>
+
+  <style scoped>
+  label {
+    @apply block text-sm font-semibold leading-6 text-gray-900;
+  }
+
+  input, textarea {
+    @apply mt-2.5 block w-full rounded-md border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500;
+  }
+
+  .dynamic-form {
+    @apply mt-2.5 space-y-4;
+  }
+  .dynamic-form input {
+    @apply h-4 w-4 text-orange-600 border-gray-300 focus:ring-orange-500;
+  }
+  .dynamic-form label {
+    @apply ml-3 block text-sm font-medium text-gray-700;
+  }
+  </style>
   
+
+<script setup>
+import { ref, reactive } from 'vue';
+
+const form = reactive({
+  name: '',
+  businessName: '',
+  email: '',
+  phone: '',
+  selection: '',
+  additionalInfo: '',
+  budget: 500,
+});
+
+const formFlow = ref([]);
+const currentStep = ref(0);
+const showAdditionalInfo = ref(false);
+const showBudgetSlider = ref(false);
+
+// Initialize or update your form flow based on selections
+const initFormFlow = () => {
+  // Initialize the first question based on your logic
+  formFlow.value = [
+    {
+      question: "What are you looking for?",
+      options: [
+        { text: "Brand Development", value: "brand" },
+        { text: "Web Development", value: "web" },
+        { text: "Both", value: "both" },
+      ],
+    },
+    // Add more steps as needed
+  ];
+};
+
+const handleSelection = (value) => {
+  // Logic to update form flow based on selection
+  // This is where you'll adjust the form flow based on the previous answers
+  if (value === 'brand') {
+    // Specify next steps for Brand Development
+  } else if (value === 'web') {
+    // Specify next steps for Web Development
+  } else if (value === 'both') {
+    // Specify next steps for Both
+  }
+  // Show additional info text area and budget slider at the end
+  showAdditionalInfo.value = true;
+  showBudgetSlider.value = true;
+};
+
+initFormFlow();
+</script>

@@ -79,6 +79,7 @@
                     label="Request Your Free Consultation"
                     url="/"
                     colour="red"
+                    size="sm"
                   />
                 </div>
               </div>
