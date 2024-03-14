@@ -7,8 +7,8 @@
         <p class="mx-auto mt-6 max-w-3xl text-lg leading-8">
           {{ text }}
         </p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <UiButton v-for="button in buttons" :key="button.label" :label="button.label" size="md" :url="button.url" colour="secondary" target="_blank" />
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+          <UiButton class="w-full" v-for="button in buttons" :key="button.label" :label="button.label" size="md" :url="button.url" colour="secondary" target="_blank" />
         </div>
       </div>
     </div>

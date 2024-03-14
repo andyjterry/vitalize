@@ -180,6 +180,6 @@ import Button from "~/components/ui/Button.vue";
 }
 
 .intro-text p {
-  @apply mt-6  sm:text-xl leading-6 md:leading-8 text-gray-800 sm:max-w-md lg:max-w-none;
+  @apply mt-6 text-lg sm:text-xl leading-6 md:leading-8 text-gray-800 sm:max-w-md lg:max-w-none;
 }
 </style>

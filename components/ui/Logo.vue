@@ -4,7 +4,7 @@
         <span class="text-secondary">brand</span>
         <span class="text-dark">badger</span>
     </div>
-    <div class="code"><span>&lt;</span> /<span>&gt;</span></div>
+    <!-- <div class="code"><span>&lt;</span> /<span>&gt;</span></div> -->
 </div>
 </template>
 

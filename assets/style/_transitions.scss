@@ -64,3 +64,26 @@
     opacity: 0;
   }
 }
+
+
+// background blur on scroll
+.blur-on-scroll {
+  /* Existing styles for your element (e.g., background color, padding) */
+
+  backdrop-filter: blur(0px); /* Initial blur (no blur) */
+  transition: backdrop-filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+.blur-on-scroll.scrolled {
+  backdrop-filter: blur(5px); /* Amount of blur on scroll */
+}
+
+.blur-on-scroll::before {
+  content: "";
+  filter: blur(5px); /* Amount of blur */
+}
+
+  .blur-bg {
+    transition: backdrop-filter 0.3s ease-in-out;   
+    backdrop-filter: blur(4px);
+  }

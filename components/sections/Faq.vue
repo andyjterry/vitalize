@@ -4,7 +4,7 @@
         <div class="mx-auto max-w-5xl divide-y divide-gray-900/10">
   <div class="max-w-3xl">
           <h2 class="text-4xl font-bold leading-10 tracking-tight ">Frequently asked questions</h2>
-          <p class="my-4">Want to know how BrandBadger can help your business thrive online? Check out these FAQs for some quick answers. No question is too big or too small, so fire away!</p>
+          <p class="my-4">Want to know how Brand Badger can help your business thrive online? Check out these FAQs for some quick answers. No question is too big or too small, so fire away!</p>
         </div>
           <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
             <Disclosure as="div" v-for="faq in faqs" :key="faq.question" class="pt-6" v-slot="{ open }">
@@ -46,7 +46,7 @@
   },
   {
     question: "Do you use WordPress or templates?",
-    answer: "Nope, we ditch the templates and build websites from scratch. Your website should be as unique as your business, so we hand-code everything for ultimate flexibility, top speed, and a dash of BrandBadger magic. Bespoke websites, that's our game."
+    answer: "Nope, we ditch the templates and build websites from scratch. Your website should be as unique as your business, so we hand-code everything for ultimate flexibility, top speed, and a dash of Brand Badger magic. Bespoke websites, that's our game."
   },
   {
     question: "Can you help with Google visibility?",
