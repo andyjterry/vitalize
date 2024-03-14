@@ -1,10 +1,11 @@
 <template>
-  <div class="bg-light mt-36 sm:mb-20 sm:mt-0">
+  <div class="bg-light sm:mb-20 sm:mt-0">
     <header>
       <div class="relative isolate">
         <svg
           class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
           aria-hidden="true"
+          style=" backdrop-filter: blur(2px);"
         >
           <defs>
             <pattern
