@@ -2,7 +2,7 @@
     <footer class="bg-dark text-light">
       <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-          <div v-for="item in navigation.main" :key="item.name" class="pb-6">
+          <div v-for="item in footerNavigation" :key="item.name" class="pb-6">
             <a :href="item.href" class="text-lg leading-6 hover:text-orange-500">{{ item.name }}</a>
           </div>
         </nav>
@@ -20,8 +20,10 @@
   
   <script setup>
   import { defineComponent, h } from 'vue'
+  import navigationData from "~/data/navigation.json";
 
   const currentYear = ref(new Date().getFullYear())
+  const footerNavigation = navigationData.navigation.filter((item) => item.footer);
 
   const navigation = {
     main: [
