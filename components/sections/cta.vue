@@ -8,7 +8,7 @@
           {{ text }}
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <UiButton v-for="button in buttons" :key="button.label" :label="button.label" size="md" url="test" colour="secondary" target="_blank" />
+          <UiButton v-for="button in buttons" :key="button.label" :label="button.label" size="md" :url="button.url" colour="secondary" target="_blank" />
         </div>
       </div>
     </div>

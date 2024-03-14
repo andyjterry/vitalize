@@ -7,7 +7,7 @@
         <div class="flex lg:flex-1">
           <a href="/" class="">
             <span class="sr-only">brandbadger Logo</span>
-            <logo></logo>
+            <logo />
           </a>
         </div>
         <div class="flex lg:hidden">

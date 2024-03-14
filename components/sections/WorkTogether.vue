@@ -32,7 +32,7 @@
               <label>{{ formFlow[currentStep].question }}</label>
               <div class="dynamic-form">
                 <div v-for="(option, index) in formFlow[currentStep].options" :key="index" class="flex items-center">
-                  <input type="radio" :id="option.value" :value="option.value" v-model="form.selection" @change="handleSelection(option.value)" class="">
+                  <input type="radio" :id="option.value" :value="option.value" v-model="form.selection" @change="handleSelection(option.value)" class="accent-blue-500">
                   <label for="option.value" class="">
                     {{ option.text }}
                   </label>

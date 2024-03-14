@@ -4,6 +4,9 @@ import svgLoader from 'vite-svg-loader'
 
 // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 export default {
+    server: {
+        host: '0.0.0.0' // This allows connections from any IP address
+      },
     runtimeConfig: {
         public: {
           strapiBaseUrl: process.env.PUBLIC_STRAPI_BASE_URL,

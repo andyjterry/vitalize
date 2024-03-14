@@ -60,18 +60,26 @@
           />
         </div>
         <div class="overflow-hidden">
-          <div
-            class="mx-auto max-w-7xl py-6 px-6 lg:px-8"
-          >
+          <div class="mx-auto max-w-7xl py-6 px-6 lg:px-8">
             <div
               class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
             >
               <div class="intro-text">
                 <h1>
-                Elevate Your <span>Brand</span>,<br/>  Accelerate Your <span>Success.</span>
+                  Elevate Your <span class="text-secondary">Brand</span>,<br />
+                  Accelerate Your <span class="text-secondary">Success</span>.
                 </h1>
                 <p>
-                At Brand Badger, we specialise in custom web development and complete branding solutions that not only present your business but propel it forward. Beyond merely building websites, we craft digital identities that resonate with your audience. From creating responsive, user-friendly sites to designing distinctive branding elements, our bespoke services are tailored to showcase the unique character of your brand. Our collaborative, transparent, and efficient approach ensures your business not only stands out online but also achieves tangible results.
+                  At Brand Badger, we specialise in custom web development and
+                  complete branding solutions that not only present your
+                  business but propel it forward. Beyond merely building
+                  websites, we craft digital identities that resonate with your
+                  audience. From creating responsive, user-friendly sites to
+                  designing distinctive branding elements, our bespoke services
+                  are tailored to showcase the unique character of your brand.
+                  Our collaborative, transparent, and efficient approach ensures
+                  your business not only stands out online but also achieves
+                  tangible results.
                 </p>
 
                 <div class="mt-10 flex items-center gap-x-6">
@@ -164,16 +172,14 @@ import Button from "~/components/ui/Button.vue";
 
 <style scoped>
 .intro-text {
-  @apply relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl;
+  @apply relative w-full md:max-w-xl lg:shrink-0 xl:max-w-2xl;
 }
 .intro-text h1 {
-  @apply text-xl font-bold sm:text-5xl tracking-wider leading-5;
+  @apply text-xl font-bold sm:text-5xl tracking-wider leading-8;
   /* line-height: 3.25rem; */
 }
-.intro-text h1 span {
-  @apply text-orange-500;
-}
+
 .intro-text p {
-  @apply mt-6 sm:text-xl leading-8 text-gray-800 sm:max-w-md lg:max-w-none;
+  @apply mt-6  sm:text-xl leading-6 md:leading-8 text-gray-800 sm:max-w-md lg:max-w-none;
 }
 </style>

@@ -3,7 +3,7 @@
     <app-header></app-header>
     <cta
       title="Ready to Grow Online? Let's Do This!"
-      text="Don't get lost in the digital woods. BrandBadger helps local businesses stand out with websites and branding that are simple, effective, and get noticed."
+      text="Don't get lost in the digital woods. Brand Badger helps local businesses stand out with websites and branding that are simple, effective, and get noticed."
       :buttons="ctaButtons"
     ></cta>
     <process></process>
@@ -21,8 +21,9 @@ import AppHeader from '~/components/header/AppHeader.vue';
 import details from '~/data/details.json'
 
 const ctaButtons = [
-  { label: 'Chat on WhatsApp', url: 'https://wa.me/447447460461' },
-  { label: 'Send an Email', url: 'mailto:info@brandbadger.co.uk' },
+  { label: 'WhatsApp', url: 'https://wa.me/447447460461' },
+  { label: 'Email', url: 'mailto:info@brandbadger.co.uk' },
+  { label: 'Call', url: 'tel:447447470471' },
   // Add more buttons as needed
 ];
 </script>
