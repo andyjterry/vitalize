@@ -1,10 +1,44 @@
 {
     "navigation": [
-    { "name": "Services", "href": "services", "main": true, "footer": true, "icon": "", "description": "lorem" },
-    { "name": "About Us", "href": "about-us", "main": true, "footer": true, "icon": "", "description": "lorem" },
-    { "name": "Web Development", "href": "web-development", "main": false, "footer": false, "icon": "", "description": "lorem" },
-    { "name": "Printables", "href": "printables", "main": false, "footer": false, "icon": "", "description": "lorem" },
-    { "name": "Contact", "href": "contact", "main": true, "footer": true, "icon": "", "description": "lorem" }
-]
-
+        { 
+            "name": "Services", 
+            "href": "services", 
+            "main": true, 
+            "footer": true, 
+            "icon": "", 
+            "description": "Discover our full range of services designed to propel your brand forward. From web development to branding, we've got you covered." 
+        },
+        { 
+            "name": "About Us", 
+            "href": "about-us", 
+            "main": true, 
+            "footer": true, 
+            "icon": "", 
+            "description": "Learn more about the team behind Brand Badger. We're passionate about helping your business thrive online." 
+        },
+        { 
+            "name": "Web Development", 
+            "href": "web-development", 
+            "main": false, 
+            "footer": false, 
+            "icon": "", 
+            "description": "Crafting bespoke websites that engage and inspire. Our web development services are tailored to meet your unique business needs." 
+        },
+        { 
+            "name": "Printables", 
+            "href": "printables", 
+            "main": false, 
+            "footer": false, 
+            "icon": "", 
+            "description": "Extend your brand's reach offline with our range of printables, including business cards, flyers, and more." 
+        },
+        { 
+            "name": "Contact", 
+            "href": "contact", 
+            "main": true, 
+            "footer": true, 
+            "icon": "", 
+            "description": "Got questions? Ready to elevate your brand? Reach out to us, and let's start making digital magic together." 
+        }
+    ]
 }
