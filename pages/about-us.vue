@@ -53,9 +53,10 @@
                 <li v-for="person in people" :key="person.name" class="flex flex-col gap-10 pt-12 sm:flex-row">
                     <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" :src="person.imageUrl" :alt="'image of ' + person.name" />
                     <div class="max-w-xl flex-auto">
-                        <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">{{ person.name }}</h3>
-                        <p class="text-base leading-7 text-gray-600">{{ person.role }}</p>
-                        <p class="mt-6 text-base leading-7 text-gray-600">{{ person.bio }}</p>
+                        <h3 class="text-xl font-bold leading-8 tracking-tight text-gray-900">{{ person.name }}</h3>
+                        <p class="text-xs text-orange-600">{{ person.businessRole }}</p>
+                        <p class="text-base leading-7 font-semibold text-gray-800">{{ person.role }}</p>
+                        <p class="mt-6 text-base leading-7 text-gray-700">{{ person.bio }}</p>
                     </div>
                 </li>
             </ul>
@@ -73,58 +74,53 @@
   import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
   
   const stats = [
-  { label: 'Websites Launched', value: '250+' },
-  { label: 'Happy Clients', value: '150+' },
-  { label: 'Branding Projects', value: '100+' },
-  { label: 'Years of Experience', value: '5+' }
+    { label: 'Websites Launched', value: '300+' },
+  { label: 'Branding Projects Completed', value: '120+' },
+  { label: 'Satisfied Clients', value: '200+' },
+  { label: 'Years Making Digital Beautiful', value: '7+' }
 ]
 
   const values = [
     {
-      name: 'Be world-class',
-      description:
-        'Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.',
-    },
-    {
-      name: 'Share everything you know',
-      description:
-        'Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.',
-    },
-    {
-      name: 'Always learning',
-      description:
-        'Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.',
-    },
-    {
-      name: 'Be supportive',
-      description:
-        'Magnam provident veritatis odit. Vitae eligendi repellat non. Eum fugit impedit veritatis ducimus. Non qui aspernatur laudantium modi. Praesentium rerum error deserunt harum.',
-    },
-    {
-      name: 'Take responsibility',
-      description:
-        'Sit minus expedita quam in ullam molestiae dignissimos in harum. Tenetur dolorem iure. Non nesciunt dolorem veniam necessitatibus laboriosam voluptas perspiciatis error.',
-    },
-    {
-      name: 'Enjoy downtime',
-      description:
-        'Ipsa in earum deserunt aut. Quos minus aut animi et soluta. Ipsum dicta ut quia eius. Possimus reprehenderit iste aspernatur ut est velit consequatur distinctio.',
-    },
+    name: 'Innovation in Design',
+    description: 'Pushing the boundaries of digital aesthetics to create stunning, user-friendly websites that stand out in the digital crowd.',
+  },
+  {
+    name: 'Transparency First',
+    description: 'Keeping you in the loop with clear communication from start to finish, ensuring the project aligns with your vision.',
+  },
+  {
+    name: 'Continuous Growth',
+    description: 'Evolving with the latest web technologies and design trends to keep your brand at the cutting edge.',
+  },
+  {
+    name: 'Supportive Partnership',
+    description: 'Fostering lasting relationships with our clients by being there when you need us, before, during, and after project completion.',
+  },
+  {
+    name: 'Empowerment Through Education',
+    description: 'Equipping you with the knowledge and tools to manage your digital presence effectively, empowering your team and your brand.',
+  },
+  {
+    name: 'Balanced Creativity',
+    description: 'Finding the perfect blend of creativity and functionality to ensure your website not only looks great but works great too.',
+  },
   ]
-const people = [
-    {
-        name: 'Andy Terry',
-        role: 'Developer / Designer / Co-Founder',
-        imageUrl: 'https://scontent.fman2-2.fna.fbcdn.net/v/t39.30808-6/347231099_7543022469094831_3545115610667272054_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=25drA_TgopQAX8-UVhd&_nc_ht=scontent.fman2-2.fna&oh=00_AfBYZt3TduiLhjDNC9l-U93tr8MlwhEbyUVe225uENidKg&oe=65F7C499',
-        bio: 'I am a front-end developer with a strong background in design. In addition to my technical expertise, I have a passion for helping businesses improve their online presence.',
-    },
-    {
-        name: 'Paige Heneghan',
-        role: 'Co-Founder / Admin / HR / Sales',
-        imageUrl: 'https://scontent.fman2-1.fna.fbcdn.net/v/t1.6435-9/47360186_2255498424727307_7988958711831855104_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=25tG1gOzQ8oAX_QvIMX&_nc_oc=AQn-qHjSl7fRKI6ql5RQKdKC3__APoCTZcJcSGzyltU0HrcZim7q4UG8Y_u_U4y-gQI&_nc_ht=scontent.fman2-1.fna&oh=00_AfBWwBjho0MHZip63i-jQ76x-jMai7hxF6zMmsqzDTWXyw&oe=661B189A',
-        bio: 'Paige is a versatile professional with experience in various roles. She is passionate about delivering exceptional service to clients and has a keen interest in singing and traveling.',
-    },
-    // More people...
-];
+  const people = ref([
+  {
+    name: 'Andy Terry',
+    businessRole:'Managing Director',
+    role: 'Front-End Developer & Designer',
+    imageUrl: 'https://scontent.fman2-2.fna.fbcdn.net/v/t39.30808-6/347231099_7543022469094831_3545115610667272054_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=25drA_TgopQAX8-UVhd&_nc_ht=scontent.fman2-2.fna&oh=00_AfBYZt3TduiLhjDNC9l-U93tr8MlwhEbyUVe225uENidKg&oe=65F7C499', // Update with actual URL or keep a placeholder
+    bio: 'With a blend of technical expertise and an eye for design, Andy drives Brand Badger\'s mission to create unique digital experiences that engage and inspire.',
+  },
+  {
+    name: 'Paige Heneghan',
+    businessRole:'Director',
+    role: 'Business Operations & Client Relations',
+    imageUrl: 'https://scontent.fman2-1.fna.fbcdn.net/v/t1.6435-9/47360186_2255498424727307_7988958711831855104_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=25tG1gOzQ8oAX_QvIMX&_nc_oc=AQn-qHjSl7fRKI6ql5RQKdKC3__APoCTZcJcSGzyltU0HrcZim7q4UG8Y_u_U4y-gQI&_nc_ht=scontent.fman2-1.fna&oh=00_AfBWwBjho0MHZip63i-jQ76x-jMai7hxF6zMmsqzDTWXyw&oe=661B189A', // Update with actual URL or keep a placeholder
+    bio: 'Paige ensures smooth operations and fosters strong relationships with our clients, ensuring every project is a success from start to finish.',
+  },
+  // Add more team members here
+]);
 </script>
-```
