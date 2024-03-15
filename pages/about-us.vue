@@ -9,10 +9,10 @@
           >
             Our Story
           </h2>
-          <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+          <div class="sm:mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div class="lg:w-full lg:max-w-full lg:flex-auto ">
  
-              <div class="mt-10 text-base  leading-7 text-gray-700  grid grid-cols-2 space-x-4 ">
+              <div class="sm:mt-10 mt-3 text-base  leading-7 text-gray-700  grid sm:grid-cols-2 sm:space-x-4 ">
                 <div class="">
                   <p class="text-xl leading-8 text-gray-600 mb-10">
                 Welcome to Brand Badger, where our passion for digital
@@ -49,7 +49,7 @@
                   with your goals.
                 </p>
               </div>
-              <div class="  text-gray-800 ">
+              <div class="  text-gray-800 mt-10 sm:mt-0">
                 <div class="mb-16">
                 <h2
               class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl"
@@ -64,15 +64,15 @@
           </div>
                 <ul
             role="list"
-            class="-mt-12 space-y-12 divide-y divide-gray-200/10 xl:col-span-3"
+            class="sm:-mt-12 space-y-12 divide-y divide-gray-200/10 xl:col-span-3"
           >
             <li
               v-for="person in people"
               :key="person.name"
-              class="flex flex-col gap-10 pt-12 sm:flex-row shadow-xl p-5 rounded-xl bg-gray-50/95"
+              class="flex flex-col gap-10 pt-12 sm:flex-row sm:shadow-xl p-5 rounded-xl bg-gray-50/95"
             >
               <img
-                class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover border-2 border-gray-200 shadow-xl"
+                class="sm:aspect-[4/5] sm:w-52 flex-none rounded-2xl object-cover border-2 border-gray-200 shadow-xl"
                 :src="person.imageUrl"
                 :alt="'image of ' + person.name"
               />
