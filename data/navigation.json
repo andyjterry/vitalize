@@ -2,8 +2,8 @@
     "navigation": [
     { "name": "Services", "href": "services", "main": true, "footer": true, "icon": "", "description": "lorem" },
     { "name": "About Us", "href": "about-us", "main": true, "footer": true, "icon": "", "description": "lorem" },
-    { "name": "Web Development", "href": "web-development", "main": true, "footer": true, "icon": "", "description": "lorem" },
-    { "name": "Printables", "href": "printables", "main": true, "footer": true, "icon": "", "description": "lorem" },
+    { "name": "Web Development", "href": "web-development", "main": false, "footer": false, "icon": "", "description": "lorem" },
+    { "name": "Printables", "href": "printables", "main": false, "footer": false, "icon": "", "description": "lorem" },
     { "name": "Contact", "href": "contact", "main": true, "footer": true, "icon": "", "description": "lorem" }
 ]
 

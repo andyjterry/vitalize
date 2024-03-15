@@ -37,7 +37,7 @@
             <div>
               <label for="budget">Your Budget</label>
               <input type="range" id="budget" name="budget" v-model="form.budget" min="500" max="4000" step="500" class="mt-2.5 block w-full">
-              <p class="text-right text-sm text-gray-600">£{{ form.budget }}</p>
+              <p class="text-right text-base text-gray-600">£{{ form.budget }}<span class="text-orange-600 " v-if="form.budget == 4000">+</span></p>
             </div>
 
             <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-orange-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2">Send Inquiry</button>
