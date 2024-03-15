@@ -8,8 +8,10 @@
         <div class="px-6 lg:px-8">
           <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
             <h2 class="text-3xl font-bold tracking-tight text-gray-900">Let's work together</h2>
-            <p class="mt-2 text-lg leading-8 text-gray-600">Proin volutpat consequat porttitor cras nullam gravida at orci molestie a eu arcu sed ut tincidunt magna.</p>
-            <form @submit.prevent="handleSubmit" method="POST" action="https://formspree.io/f/xrgnldko" class="mt-16 space-y-6">
+            <p class="mt-2 text-lg leading-8 text-gray-600">At Brand Badger, we're all about getting the job done right. You have a vision for your brand and website, and we have the tools and know-how to make it happen. No fluff, no false promises—just solid work that speaks for itself. Share your project details with us, and we'll figure out the best way to bring your ideas to life. Let's make your brand stand out and your website shine.
+
+</p>
+            <form  method="POST" action="https://formspree.io/f/xrgnldko" class="mt-16 space-y-6">
             <div>
               <label for="name">Name</label>
               <input type="text" name="name" id="name" v-model="form.name" required>
@@ -27,27 +29,14 @@
               <input type="tel" name="phone" id="phone" v-model="form.phone">
             </div>
 
-            <!-- Dynamic part of the form -->
-            <div v-if="formFlow.length">
-              <label>{{ formFlow[currentStep].question }}</label>
-              <div class="dynamic-form">
-                <div v-for="(option, index) in formFlow[currentStep].options" :key="index" class="flex items-center">
-                  <input type="radio" :id="option.value" :value="option.value" v-model="form.selection" @change="handleSelection(option.value)" class="accent-blue-500">
-                  <label for="option.value" class="">
-                    {{ option.text }}
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div v-if="showAdditionalInfo">
+            <div>
               <label for="additional-info">Additional Information</label>
               <textarea id="additional-info" name="additional-info" v-model="form.additionalInfo" rows="4"></textarea>
             </div>
 
-            <div v-if="showBudgetSlider">
+            <div>
               <label for="budget">Your Budget</label>
-              <input type="range" id="budget" name="budget" v-model="form.budget" min="500" max="10000" class="mt-2.5 block w-full">
+              <input type="range" id="budget" name="budget" v-model="form.budget" min="500" max="4000" step="500" class="mt-2.5 block w-full">
               <p class="text-right text-sm text-gray-600">£{{ form.budget }}</p>
             </div>
 
@@ -91,43 +80,8 @@ const form = reactive({
   selection: '',
   additionalInfo: '',
   budget: 500,
-});
+  });
+  const showBudgetSlider = ref(false);
 
-const formFlow = ref([]);
-const currentStep = ref(0);
-const showAdditionalInfo = ref(false);
-const showBudgetSlider = ref(false);
 
-// Initialize or update your form flow based on selections
-const initFormFlow = () => {
-  // Initialize the first question based on your logic
-  formFlow.value = [
-    {
-      question: "What are you looking for?",
-      options: [
-        { text: "Brand Development", value: "brand" },
-        { text: "Web Development", value: "web" },
-        { text: "Both", value: "both" },
-      ],
-    },
-    // Add more steps as needed
-  ];
-};
-
-const handleSelection = (value) => {
-  // Logic to update form flow based on selection
-  // This is where you'll adjust the form flow based on the previous answers
-  if (value === 'brand') {
-    // Specify next steps for Brand Development
-  } else if (value === 'web') {
-    // Specify next steps for Web Development
-  } else if (value === 'both') {
-    // Specify next steps for Both
-  }
-  // Show additional info text area and budget slider at the end
-  showAdditionalInfo.value = true;
-  showBudgetSlider.value = true;
-};
-
-initFormFlow();
-</script>
+  </script>
