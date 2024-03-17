@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-dark text-light">
+    <footer class="light">
       <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           <div v-for="item in footerNavigation" :key="item.name" class="pb-6">
@@ -7,7 +7,7 @@
           </div>
         </nav>
         <div class="mt-10 flex justify-center space-x-10">
-          <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="">
+          <a v-for="item in navigation.social" :key="item.name" :href="item.href" target="_blank" class="">
             <span class="sr-only">{{ item.name }}</span>
             <component :is="item.icon" class="h-6 w-6 hover:text-orange-500" aria-hidden="true" />
           </a>
@@ -34,7 +34,7 @@
     social: [
       {
         name: 'Facebook',
-        href: '#',
+        href: 'https://facebook.com/brandbadgeruk',
         icon: defineComponent({
           render: () =>
             h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -48,7 +48,7 @@
       },
       {
         name: 'Instagram',
-        href: '#',
+        href: 'https://instagram.com/brandbadger',
         icon: defineComponent({
           render: () =>
             h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
@@ -62,7 +62,7 @@
       },
       {
         name: 'GitHub',
-        href: 'details.github',
+        href: 'https://github.com/andyjterry',
         icon: defineComponent({
           render: () =>
             h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [

@@ -32,7 +32,7 @@
         </a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <UiButton label="Lets Talk" url="test" colour="secondary" size="lg" />
+        <UiButton label="Lets Talk" url="/contact" colour="secondary" size="lg" />
       </div>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">

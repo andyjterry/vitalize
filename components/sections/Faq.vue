@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-dark text-light">
+    <div class="dark">
       <div class="mx-auto max-w-7xl px-6 py-24 sm:py-12 lg:px-8">
         <div class="mx-auto max-w-5xl divide-y divide-gray-900/10">
   <div class="max-w-3xl">
-          <h2 class="text-4xl font-bold leading-10 tracking-tight ">Frequently asked questions</h2>
+          <h2>Frequently asked questions</h2>
           <p class="my-4">Want to know how Brand Badger can help your business thrive online? Check out these FAQs for some quick answers. No question is too big or too small, so fire away!</p>
         </div>
           <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">

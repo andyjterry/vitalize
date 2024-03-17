@@ -43,33 +43,34 @@
   "steps": [
     {
       "id": 1,
-      "name": "Let's Chat",
-      "description": "Kick things off with a chat. Tell us a bit about you and your business, what you're looking for, and how we can lend a hand. We'll draft a clear-cut plan outlining the path to your goals. No jargon, no smoke and mirrors, just straightforward conversation."
+      "name": "Let's Get Talking",
+      "description": "Everything starts with a chat. Tell us about your business and what you're dreaming of online. We'll sketch out a no-fuss plan to make it happen, clear and simple, no tech babble."
     },
     {
       "id": 2,
-      "name": "Proposal and Pricing",
-      "description": "After our initial chat, we'll whip up a realistic plan tailored to your needs and come back to you with our proposal. If everything aligns with your vision and business needs, we’ll sort out the first stage payment, and then it’s all systems go."
+      "name": "Your Custom Plan",
+      "description": "With the insights from our chat, we'll craft a plan that fits just right. You'll see exactly what we can do for you, with clear costs and no surprises. Once you're happy, we're ready to roll."
     },
     {
       "id": 3,
-      "name": "Plan It Out",
-      "description": "Together, we dive into the details, creating a blueprint that lays the groundwork for your online presence. We’ll discuss layouts, steps, and the technical aspects, all in plain English, ensuring your vision begins to take shape precisely as you imagined."
+      "name": "Mapping It Out",
+      "description": "Now, we dig into the details, planning out your site or brand refresh. We're talking designs, features, and the tech stuff—explained in plain English—so it's all shaping up just as you pictured."
     },
     {
       "id": 4,
-      "name": "Development and Content",
-      "description": "Now, we bring your vision to life. Through coding, testing, and more coding, we ensure a smooth, seamless launch, always keeping you in the loop. This stage also involves gathering all necessary copy, content, and imagery from you to perfectly encapsulate your brand."
+      "name": "Bringing It to Life",
+      "description": "This is where the magic happens. We get cracking on the build, keeping you in the loop with updates. Need content or images? We've got that covered too, just send them our way."
     },
     {
       "id": 5,
-      "name": "Go Live",
-      "description": "It's the big day! We launch your site into the digital world. But it’s more than just hitting the 'live' button; we ensure your site is polished, optimized, and ready to wow your audience from the outset. Consider this your digital grand opening."
+      "name": "Launch Time",
+      "description": "Here's the big moment! We go live, making sure everything's shiny, running smoothly, and ready to wow. It's not just flipping a switch; it's about making sure your site makes a splash from day one."
     },
     {
       "id": 6,
-      "name": "Keep It Rolling",
-      "description": "Our journey doesn’t end at launch. We stick around for a week to ensure everything runs smoothly. Beyond that, we offer retainer services for additional tweaks, updates, or new content, available on an ad hoc basis or through 6-12 month packages, ensuring your site remains fresh and relevant."
+      "name": "We've Got Your Back",
+      "description": "Even after your site goes live, we're here to help it keep ticking perfectly. Need a tweak or update? Just give us a shout. Plus, we've got ongoing support packages if you're looking for the extra peace of mind."
     }
   ]
+  
 }

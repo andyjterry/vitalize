@@ -3,7 +3,7 @@
       <main>
         <div class="mx-auto max-w-7xl px-6 lg:px-8 py-20">
           <div class="mx-auto max-w-4xl text-center">
-            <h1 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">Our Packages</h1>
+            <h1 class="text-white ">Our Packages</h1>
             <p class="mx-auto mt-6 max-w-4xl text-center text-lg leading-8 text-gray-300">
     Whether you're starting fresh or refining your brand, our specialised plans are designed to meet your specific needs. Discover our tailored packages for web development, branding, and more. Each crafted to propel your business to new heights.
   </p>

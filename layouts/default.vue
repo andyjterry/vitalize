@@ -8,13 +8,11 @@
 </template>
 
 <script>
-import AppHeader from "@/components/header/AppHeader.vue"
 import AppFooter from "@/components/footer/Footer.vue"
 import Navigation from '@/components/header/Navigation.vue'
 
 export default {
   components: {
-    AppHeader,
     Navigation,
     AppFooter,
   },

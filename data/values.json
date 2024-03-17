@@ -1,0 +1,31 @@
+{
+    "title": "Our Values",
+    "subtext": "At Brand Badger, we stand firm on principles that guide every project, ensuring we deliver not just results, but value that propels your business forward. Here's what we believe in:",
+    "values": [
+        {
+            "name": "Straightforward Solutions",
+            "description": "We cut through the jargon to provide clear, effective strategies tailored to your business."
+        },
+        {
+            "name": "Transparency First",
+            "description": "Honesty is our policy. We keep you informed every step of the way, ensuring there are no surprises."
+        },
+        {
+            "name": "Your Success is Our Success",
+            "description": "We thrive when you do. Our aim is to see your business grow and reach its full potential."
+        },
+        {
+            "name": "Partnership, Not Just Service",
+            "description": "We believe in building relationships, not just completing transactions. Your goals become ours."
+        },
+        {
+            "name": "Direct and To The Point",
+            "description": "No beating around the bush. We provide focused advice and strategies that make sense for you."
+        },
+        {
+            "name": "Fun and Friendly",
+            "description": "While we’re serious about our work, we believe in enjoying the journey and having a good laugh along the way."
+        }
+    ]
+}
+
