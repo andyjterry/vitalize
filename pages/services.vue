@@ -41,7 +41,7 @@
               </ul>
             </div>
           </div>
-          <div class="mt-12 mx-auto max-w-6xl text-center text-xs text-gray-300">
+          <div class="mt-12 mx-auto max-w-6xl small-print">
   <p>*Web Hosting and Maintenance: Includes hosting, regular updates, and security checks to ensure your website runs smoothly.</p>
   <p>*Content Updates: Limited to basic text and image changes on existing pages, ensuring your content remains fresh and up-to-date.</p>
   <p class="mt-4">All packages require a commitment period. Early termination may incur fees, including the balance of the contracted service period. Detailed terms will be provided upon service agreement.</p>
@@ -100,4 +100,13 @@
     // Add more plans here following the same structure
   ]);
   </script>
+
+  <style scoped>
+  .small-print {
+  @apply text-sm text-gray-300; 
+  p {
+    @apply text-xs text-center;
+  }
+  }
+  </style>
   
