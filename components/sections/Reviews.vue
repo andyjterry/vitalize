@@ -9,10 +9,15 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center">
           <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
+          <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with some amazing clients</p>
         </div>
         <div class="text-center mt-12">
-          <a href="https://g.page/r/CRkB-jj1xVVXEBM/review" target="_blank" class="text-indigo-600 hover:underline">Loved our service? Leave us a review.</a>
+          <Button
+                    label="Loved our service? Leave us a review"
+                    url="https://g.page/r/CRkB-jj1xVVXEBM/review"
+                    colour="red"
+                    size="sm"
+                  />
         </div>
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
@@ -23,14 +28,14 @@
               <img class="h-10 w-10 flex-none rounded-full bg-gray-50" :src="featuredTestimonial.author.imageUrl" alt="" />
               <div class="flex-auto">
                 <div class="font-semibold">{{ featuredTestimonial.author.name }}</div>
-                <div class="text-gray-600">{{ `@${featuredTestimonial.author.handle}` }}</div>
+                <div class="text-gray-600">{{ `${featuredTestimonial.author.company}` }}</div>
               </div>
               <img class="h-10 w-auto flex-none" :src="featuredTestimonial.author.logoUrl" alt="" />
             </figcaption>
           </figure>
           <div v-for="(columnGroup, columnGroupIdx) in testimonials" :key="columnGroupIdx" class="space-y-8 xl:contents xl:space-y-0">
             <div v-for="(column, columnIdx) in columnGroup" :key="columnIdx" :class="[(columnGroupIdx === 0 && columnIdx === 0) || (columnGroupIdx === testimonials.length - 1 && columnIdx === columnGroup.length - 1) ? 'xl:row-span-2' : 'xl:row-start-1', 'space-y-8']">
-              <figure v-for="testimonial in column" :key="testimonial.author.handle" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+              <figure v-for="testimonial in column" :key="testimonial.author.company" class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
                 <blockquote class="text-gray-900">
                   <p>{{ `“${testimonial.body}”` }}</p>
                 </blockquote>
@@ -38,7 +43,7 @@
                   <img class="h-10 w-10 rounded-full bg-gray-50" :src="testimonial.author.imageUrl" alt="" />
                   <div>
                     <div class="font-semibold">{{ testimonial.author.name }}</div>
-                    <div class="text-gray-600">{{ `@${testimonial.author.handle}` }}</div>
+                    <div v-if="testimonial.author.company" class="text-gray-600">{{ `${testimonial.author.company}` }}</div>
                   </div>
                 </figcaption>
               </figure>
@@ -50,44 +55,37 @@
   </template>
   
   <script setup>
+  import Button from '~/components/ui/Button.vue';
   const featuredTestimonial = {
-    body: "Brand Badger transformed our online presence with a stunning, user-friendly website that truly represents our business ethos. Their attention to detail and dedication to understanding our needs made all the difference. Highly recommend for any UK businesses looking to elevate their digital strategy.",
+    body: "Andy has just done some work for the charity I work for. His work is incredible and he is such a lovely guy. His responses were always so quick which was fantastic as I work in such a fast paced environment. I have already recommended Andy to a couple of people and I wouldn’t hesitate in recommending him further. If you’re in need of his skills, definitely give him a message! Thank you Andy! ",
   author: {
-    name: 'Eleanor Pritchard',
-    handle: 'eleanorpritchard',
+    name: 'Beth Codling',
+    company: 'Newcastle Dog & Cat Shelter',
       imageUrl:
-        'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
-      logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
+      'https://media.licdn.com/dms/image/D4E35AQEF100voTvTeA/profile-framedphoto-shrink_100_100/0/1701183162860?e=1711368000&v=beta&t=WdrnDNHRB2IyRQJTihJozayT5ejK2Yu7_DcFFWc5hXk',
+      logoUrl: 'https://static.wixstatic.com/media/12e1c6_e1c47dc476df4ca588c6fd70cc37fd64~mv2.png/v1/fill/w_699,h_281,al_c,lg_1,q_85,enc_auto/12e1c6_e1c47dc476df4ca588c6fd70cc37fd64~mv2.png',
     },
   }
   const testimonials = [
     [
       [
         {
-          body: "The Brand Badger team went above and beyond. Their approach to our branding and website was straight forward and simple. The end result? A brand identity and online presence we're absolutely proud of. Great Job.",
+          body: "Andy created some fantastic posters for my recent Business Fair event and was also extremely good at promoting via Social Media. Andy made sure to include all the small details I requested in his posters and they came out brilliantly. I would recommend his design work and would be happy to work with him again in the future.",
     author: {
-      name: 'Simon Hartley',
-      handle: 'simonhartley',
+      name: 'Amneet Graham',
+      company: 'Willows Rainbow Box',
       imageUrl:
-              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
+              'https://media.licdn.com/dms/image/D4E03AQEG9lBV40JMBA/profile-displayphoto-shrink_100_100/0/1697035150073?e=1716422400&v=beta&t=I6BRIDFd8ZeKAyyXYLP4ChAkyYth8bAGB9eZXvDBy1o',
           },
         },
-        {
-          body: "Working with Brand Badger has been a game-changer for our small business. Their personalized approach to our website design has dramatically increased our online engagement.",
-    author: {
-      name: 'Clara Oswald',
-      handle: 'claraoswald',
-      imageUrl:
-              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
-          },
-        },
+ 
       ],
       [
         {
-          body: "Brand Badger didn't just deliver; they exceeded our expectations. Their commitment to excellence and understanding of the UK market has made our new website a key asset in our marketing toolkit.",
+          body: "Andy was great, very patient throughout and he gave us a design that was just what we wanted. Very responsive and we were very impressed with the quality of the work he did for us. We were drawn to him having seen his other work which is great. He will be our go to person for all our design work in future.",
     author: {
-      name: 'Miles Bron',
-      handle: 'milesbron',
+      name: 'Rob Darbyshire',
+      company: 'Rabbit & Bear',
       imageUrl:
               'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
           },
@@ -97,33 +95,24 @@
     [
       [
         {
-          body: "Choosing Brand Badger for our website redesign was the best decision we've made. Their strategic approach resulted in a site that our customers love and has significantly boosted our online sales.",
+          body: "Andy very professional and gave us exactly what we asked for.",
     author: {
-      name: 'Geoffrey Stinton',
-      handle: 'geoffreystinton',
+      name: 'Wai-Shung Wong',
+      company: 'Pak Lok Chinese Restaurant',
       imageUrl:
-              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
+              'https://scontent.fman2-2.fna.fbcdn.net/v/t39.30808-1/347255379_829790618306546_2849912860524931887_n.jpg?stp=dst-jpg_p100x100&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=GQEU6KlVH4MAX9xEtjm&_nc_ht=scontent.fman2-2.fna&oh=00_AfB2ZakHrBvEYfpMJKLyygembqsZqMmkZECA555UNBlaQA&oe=65FC9165',
           },
         },
         // More testimonials...
       ],
       [
         {
-          body: "Our experience with Brand Badger was nothing short of fantastic. Their dedication to crafting a site that truly represented our brand was clear from the start. The outcome speaks for itself.",
+          body: "Andrew recently designed the badge for my football team as the old one was outdated, I gave Andrew a very brief outline of what I was looking for. Andrew came back to me with a badge that far outweighed my expectations, he was professional and listened to my brief and created a fantastic design, that is now on all of the new strips, players tops and tracksuits and club equipment! ",
     author: {
-      name: 'Louise Thompson',
-      handle: 'louisethompson',
+      name: 'Craig Granger',
+      company: '',
       imageUrl:
-              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
-          },
-        },
-        {
-          body: "The expertise and creative insight Brand Badger brought to our project was remarkable. Our website not only looks great but also performs excellently. A true partner in our growth.",
-    author: {
-      name: 'Fiona Gallagher',
-      handle: 'fionagallagher',
-            imageUrl:
-              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
+              'https://media.licdn.com/dms/image/D4E03AQHP4zUWBp2wLQ/profile-displayphoto-shrink_100_100/0/1664109190832?e=1716422400&v=beta&t=8BhXsznu1mlV1I_T8V9Q5wb9yNGaSSj-KpjiMjiy5Hc',
           },
         },
       ],
