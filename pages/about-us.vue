@@ -56,7 +56,11 @@
             </div>
           </div>
         </div>
-        <div class="text-gray-800 mt-10 sm:mt-0">
+        </div>
+
+        <!-- our team -->
+        <div class="dark mt-10 sm:mt-0">
+          <div class="max-w-7xl mx-auto bg-red-500">
           <div class="mb-16">
             <h3 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
               {{ peopleData.title }}
@@ -85,7 +89,8 @@
             </li>
           </ul>
         </div>
-      </div>
+        </div>
+
 
       <!-- Values section -->
 

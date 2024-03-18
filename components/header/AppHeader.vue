@@ -1,19 +1,25 @@
 <template>
-  <div class="bg-light sm:mb-20 sm:mt-0">
-    <header>
-      <div class="relative isolate">
-          <intro-elements></intro-elements>
-          <intro></intro>
-      </div>
-    </header>
-  </div>
+  <header>
+    <!-- Your header content goes here -->
+
+    <Intro />
+    <intro-elements />n
+  </header>
 </template>
 
-<script setup>
-import { ref } from "vue";
-import Button from "~/components/ui/Button.vue";
+<script>
+import IntroElements from "@/components/elements/introElements";
 import Intro from "~/components/sections/Intro.vue";
-import IntroElements from "../elements/introElements.vue"; // Updated import path
+
+export default {
+  components: {
+    IntroElements,
+    Intro
+  },
+  // Your component's logic goes here
+}
 </script>
 
-
+<style scoped>
+/* Your component's styles go here */
+</style>

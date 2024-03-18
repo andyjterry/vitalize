@@ -11,6 +11,9 @@
           <h2 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">Testimonials</h2>
           <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with thousands of amazing people</p>
         </div>
+        <div class="text-center mt-12">
+          <a href="https://g.page/r/CRkB-jj1xVVXEBM/review" target="_blank" class="text-indigo-600 hover:underline">Loved our service? Leave us a review.</a>
+        </div>
         <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
           <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
             <blockquote class="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
@@ -48,12 +51,12 @@
   
   <script setup>
   const featuredTestimonial = {
-    body: 'Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.',
-    author: {
-      name: 'Brenna Goyette',
-      handle: 'brennagoyette',
+    body: "Brand Badger transformed our online presence with a stunning, user-friendly website that truly represents our business ethos. Their attention to detail and dedication to understanding our needs made all the difference. Highly recommend for any UK businesses looking to elevate their digital strategy.",
+  author: {
+    name: 'Eleanor Pritchard',
+    handle: 'eleanorpritchard',
       imageUrl:
-        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80',
+        'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
       logoUrl: 'https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg',
     },
   }
@@ -61,53 +64,68 @@
     [
       [
         {
-          body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
-          author: {
-            name: 'Leslie Alexander',
-            handle: 'lesliealexander',
-            imageUrl:
-              'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          body: "The Brand Badger team went above and beyond. Their approach to our branding and website was straight forward and simple. The end result? A brand identity and online presence we're absolutely proud of. Great Job.",
+    author: {
+      name: 'Simon Hartley',
+      handle: 'simonhartley',
+      imageUrl:
+              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
           },
         },
-        // More testimonials...
+        {
+          body: "Working with Brand Badger has been a game-changer for our small business. Their personalized approach to our website design has dramatically increased our online engagement.",
+    author: {
+      name: 'Clara Oswald',
+      handle: 'claraoswald',
+      imageUrl:
+              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
+          },
+        },
       ],
       [
         {
-          body: 'Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.',
-          author: {
-            name: 'Lindsay Walton',
-            handle: 'lindsaywalton',
-            imageUrl:
-              'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          body: "Brand Badger didn't just deliver; they exceeded our expectations. Their commitment to excellence and understanding of the UK market has made our new website a key asset in our marketing toolkit.",
+    author: {
+      name: 'Miles Bron',
+      handle: 'milesbron',
+      imageUrl:
+              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
           },
         },
-        // More testimonials...
       ],
     ],
     [
       [
         {
-          body: 'Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.',
-          author: {
-            name: 'Tom Cook',
-            handle: 'tomcook',
-            imageUrl:
-              'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          body: "Choosing Brand Badger for our website redesign was the best decision we've made. Their strategic approach resulted in a site that our customers love and has significantly boosted our online sales.",
+    author: {
+      name: 'Geoffrey Stinton',
+      handle: 'geoffreystinton',
+      imageUrl:
+              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
           },
         },
         // More testimonials...
       ],
       [
         {
-          body: 'Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.',
-          author: {
-            name: 'Leonard Krasner',
-            handle: 'leonardkrasner',
-            imageUrl:
-              'https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+          body: "Our experience with Brand Badger was nothing short of fantastic. Their dedication to crafting a site that truly represented our brand was clear from the start. The outcome speaks for itself.",
+    author: {
+      name: 'Louise Thompson',
+      handle: 'louisethompson',
+      imageUrl:
+              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
           },
         },
-        // More testimonials...
+        {
+          body: "The expertise and creative insight Brand Badger brought to our project was remarkable. Our website not only looks great but also performs excellently. A true partner in our growth.",
+    author: {
+      name: 'Fiona Gallagher',
+      handle: 'fionagallagher',
+            imageUrl:
+              'http://chasesolar.org.uk/files/2022/02/blank-avatar-300x300.jpg',
+          },
+        },
       ],
     ],
   ]

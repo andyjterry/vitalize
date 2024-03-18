@@ -9,6 +9,7 @@
     <process></process>
     <!-- <calculator></calculator> -->
     <faq></faq>
+    <reviews></reviews>
   </div>
 </template>
 
@@ -19,6 +20,7 @@ import Faq from '~/components/sections/Faq.vue';
 import AppHeader from '~/components/header/AppHeader.vue';
 // import Calculator from '~/components/sections/Calculator.vue';
 import details from '~/data/details.json'
+import reviews from '~/components/sections/Reviews.vue';
 
 const ctaButtons = [
   { label: 'WhatsApp', url: 'https://wa.me/447447460461' },

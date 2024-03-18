@@ -1,5 +1,5 @@
 <template>
-   <div class="bg-light mx-auto transition duration-300 ease-in-out inter">
+   <div class="bg-light mx-auto transition duration-300 ease-in-out">
     <navigation></navigation>
     <slot />
     <app-footer></app-footer>

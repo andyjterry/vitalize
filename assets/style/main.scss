@@ -5,3 +5,7 @@
 @import "debug";
 @import "code";
 @import "text";
+
+body {
+    @apply jakarta;
+}
