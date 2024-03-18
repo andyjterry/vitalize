@@ -16,6 +16,14 @@
             "icon": "", 
             "description": "Learn more about the team behind Brand Badger. We're passionate about helping your business thrive online." 
         },
+        {
+            "name": "Why Us",
+            "href": "why-us",
+            "main": true,
+            "footer": false,
+            "icon": "",
+            "description": "See why Brand Badger is the partner of choice for unique web and branding solutions that make your business stand out."
+        },
         { 
             "name": "Web Development", 
             "href": "web-development", 
@@ -39,14 +47,6 @@
             "footer": true, 
             "icon": "", 
             "description": "Got questions? Ready to elevate your brand? Reach out to us, and let's start making digital magic together." 
-        },
-        {
-            "name": "Why Us",
-            "href": "why-us",
-            "main": true,
-            "footer": false,
-            "icon": "",
-            "description": "See why Brand Badger is the partner of choice for unique web and branding solutions that make your business stand out."
         }
     ]
 }

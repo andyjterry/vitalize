@@ -48,8 +48,7 @@
                     why we offer bespoke digital solutions, tailored to meet your
                     specific needs. Whether you're a startup looking to establish
                     your brand or an existing business aiming to enhance your
-                    online presence, we're here to craft solutions that resonate
-                    with your goals.
+                    online presence.
                   </p>
                 </div>
               </div>
@@ -59,8 +58,8 @@
         </div>
 
         <!-- our team -->
-        <div class="dark mt-10 sm:mt-0">
-          <div class="max-w-7xl mx-auto bg-red-500">
+        <div class="py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mb-16">
             <h3 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
               {{ peopleData.title }}
@@ -71,7 +70,7 @@
           </div>
           <ul role="list" class=" grid sm:grid-cols-2 gap-3">
             <li v-for="person in people" :key="person.name"
-              class="group flex flex-col gap-10 sm:flex-row sm:shadow-xl p-5 rounded-xl bg-gray-100/90 hover:bg-gray-100/80 transition duration-300 ease-in-out hover:shadow-none">
+              class="group flex flex-col gap-10 sm:flex-row sm:shadow-xl p-5 rounded-xl bg-gray-50/90 hover:bg-gray-50/100 transition duration-300 ease-in-out hover:shadow-none">
               <img class="sm:aspect-[4/5] sm:w-52 flex-none rounded-2xl object-cover border-2 border-gray-200 group-hover:border-white shadow-inner group-hover:shadow-xl"
                 :src="person.imageUrl" :alt="'image of ' + person.name" />
               <div class="max-w-xl flex-auto">
