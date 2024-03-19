@@ -1,13 +1,13 @@
 <template>
-  <div class="bg-white my-20">
-    <main class="isolate">
+  <div class="overflow-hidden dark">
+    <main>
       <!-- Content section -->
-      <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+      <div class="mx-auto  max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8 py-12 sm:py-36">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-10">
+          <h2 class="text-3xl font-bold tracking-tight sm:text-4xl mb-10">
             Our Story
           </h2>
-          <p class="text-xl leading-8 text-gray-600 mb-10">
+          <p class="text-base sm:text-xl leading-8 mb-10">
             Welcome to Brand Badger, where our passion for digital
             craftsmanship turns your business vision into reality. Our story
             began in 2016 as Andy Terry Web and Design, a small venture
@@ -22,7 +22,7 @@
               <div
                 class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <div>
-                  <p class="font-bold mb-3">Blending Craftsmanship with Creativity</p>
+                  <p class="font-bold mb-3 text-lg text-white">Blending Craftsmanship with Creativity</p>
                   <p>
                     At Brand Badger, we believe in more than just delivering
                     projects; we believe in crafting digital masterpieces. With
@@ -32,7 +32,7 @@
                   </p>
                 </div>
                 <div>
-                  <p class="font-bold mb-3">Building Genuine Partnerships</p>
+                  <p class="font-bold mb-3 text-lg text-white">Building Genuine Partnerships</p>
                   <p>
                     Our journey with you is more than a series of transactions. It's about
                     building a lasting partnership, where we guide you from the
@@ -42,7 +42,7 @@
                   </p>
                 </div>
                 <div>
-                  <p class="font-bold mb-3">Creating Tailored Solutions</p>
+                  <p class="font-bold mb-3 text-lg text-white">Creating Tailored Solutions</p>
                   <p>
                     We understand that your business has its own story and requirements. That's
                     why we offer bespoke digital solutions, tailored to meet your
@@ -58,13 +58,13 @@
         </div>
 
         <!-- our team -->
-        <div class="py-24 sm:py-32">
+        <div class="light py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mb-16">
-            <h3 class="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+            <h3 class="text-3xl font-bold tracking-tight sm:text-4xl">
               {{ peopleData.title }}
             </h3>
-            <p class="mt-6 text-lg leading-8 text-gray-800/80">
+            <p class="mt-6 text-lg leading-8">
               {{ peopleData.subtext }}
             </p>
           </div>
@@ -93,17 +93,17 @@
 
       <!-- Values section -->
 
-      <div class="bg-white py-24 sm:py-32">
+      <div class="dark py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ valuesData.title }}</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">{{ valuesData.description }}</p>
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">{{ valuesData.title }}</h2>
+            <p class="mt-6 text-lg leading-8">{{ valuesData.description }}</p>
           </div>
           <dl
             class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <div v-for="value in values" :key="value.name">
-              <dt class="font-semibold text-gray-900">{{ value.name }}</dt>
-              <dd class="mt-1 text-gray-600">{{ value.description }}</dd>
+              <dt class="inline text-lg text-white font-bold">{{ value.name }}</dt>
+              <dd class="mt-1">{{ value.description }}</dd>
             </div>
           </dl>
         </div>

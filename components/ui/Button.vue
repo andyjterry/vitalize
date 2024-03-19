@@ -2,7 +2,7 @@
     <a
       :href="url"
       :class="'bg-' + colour + ' ' + size"
-      class="tracking-wider opacity-95 hover:opacity-100 transition duration-300 ease-in-out text-white transition duration-300 ease-in-out  font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      class="tracking-wider sm:opacity-85 sm:hover:opacity-100 transition duration-300 ease-in-out text-white transition duration-300 ease-in-out  font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
        >
       {{ label }}
     </a>
@@ -45,12 +45,12 @@
   
   <style scoped>
     .lg {
-      @apply text-2xl rounded-3xl px-7 py-2.5 shadow-md hover:shadow-none;
+      @apply text-2xl rounded-tl-3xl rounded-br-3xl rounded-bl-lg rounded-tr-lg px-7 py-2.5 shadow-md hover:shadow-none;
     }
     .md {
-      @apply text-xl rounded-xl px-3.5 py-2.5;
+      @apply text-xl px-3.5 py-2.5 rounded-tl-3xl rounded-br-3xl rounded-bl-lg rounded-tr-lg;
     }
     .sm {
-      @apply text-sm rounded-md px-3.5 py-2.5;
+      @apply text-sm px-3.5 py-2.5 rounded-tl-2xl rounded-br-2xl rounded-bl-md rounded-tr-md;
     }
   </style>

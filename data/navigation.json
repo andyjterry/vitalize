@@ -1,6 +1,14 @@
 {
     "navigation": [
         { 
+            "name": "About Us", 
+            "href": "about-us", 
+            "main": true, 
+            "footer": true, 
+            "icon": "", 
+            "description": "Learn more about the team behind Brand Badger. We're passionate about helping your business thrive online." 
+        },
+        { 
             "name": "Services", 
             "href": "services", 
             "main": true, 
@@ -9,12 +17,12 @@
             "description": "Discover our full range of services designed to propel your brand forward. From web development to branding, we've got you covered." 
         },
         { 
-            "name": "About Us", 
-            "href": "about-us", 
+            "name": "What We Do", 
+            "href": "what-we-do", 
             "main": true, 
             "footer": true, 
-            "icon": "", 
-            "description": "Learn more about the team behind Brand Badger. We're passionate about helping your business thrive online." 
+            "icon": "CameraIcon", 
+            "description": "Discover our full range of services designed to propel your brand forward. From web development to branding, we've got you covered." 
         },
         {
             "name": "Why Us",

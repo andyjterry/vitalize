@@ -12,7 +12,7 @@
             <component :is="item.icon" class="h-6 w-6 hover:text-orange-500" aria-hidden="true" />
           </a>
         </div>
-        <p class="mt-10 text-center text-xs leading-50">&copy; 2017 - {{currentYear}}  Brand Badger: Committed to your success.</p>
+        <p class="mt-10 text-center text-xs leading-50 font-bold">&copy; 2017 - {{currentYear}} | <span class="text-secondary spartan text-base">brand</span><span class="text-base spartan">badger</span> | Committed to your success.</p>
 
       </div>
     </footer>
