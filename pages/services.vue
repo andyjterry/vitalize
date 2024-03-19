@@ -15,24 +15,24 @@
               <p class="mt-4 text-sm leading-6 text-gray-300">
                 <b>Ideal For:</b> {{ plan.idealFor }}
               </p>
-              <div class="flex flex-row justify-between items-end">
+              <div class="flex flex-row items-end justify-between">
               <div class="flex flex-col">
                 <p class="text-sm font-semibold leading-6 text-gray-300">from</p>
                 <p class="text-4xl font-bold tracking-tight text-white">£{{ plan.initialCost }}</p>                
               </div>
               <div v-if="plan.monthlyCost.length">
                 
-                <p class="flex items-baseline gap-x-1">
-                  <span class="text-sm font-semibold leading-6 text-gray-300">then only </span>
-                <span class="text-2xl font-bold tracking-tight text-white">£{{ plan.monthlyCost }}</span>
-                <span class="text-sm font-semibold leading-6 text-gray-300">per month</span>
+                <p class="flex items-baseline gap-x-1 flex-col">
+                  <span class="text-sm font-semibold leading-6 text-gray-300">then only...</span>
+                <span class="text-2xl font-bold tracking-tight text-white">£{{ plan.monthlyCost }} <span class="text-sm font-semibold leading-6 text-gray-300">per month</span></span>
+                
               </p>
             </div>
-            <div v-else>
-            </div>
+            <div class="hidden sm:block mt-10">
                 <br/><br /><br/>
+                </div>
             </div>
-              <a href="#" class="mt-6 block rounded-md bg-white/10 text-white hover:bg-white/20 py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Get Started</a>
+            <a @click="handleClick(plan.name)" class="mt-6 block rounded-md bg-white/10 text-white hover:bg-white/20 py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 cursor-pointer">Get Started</a>
               <ul role="list" class="mt-8 space-y-3 text-sm leading-6 text-gray-300">
                 <li v-for="feature in plan.features" :key="feature" class="flex gap-x-3">
                   <CheckIcon class="h-6 w-5 flex-none text-white" aria-hidden="true" />
@@ -99,6 +99,11 @@
 }
     // Add more plans here following the same structure
   ]);
+
+  const handleClick = (planName) => {
+  const subject = encodeURIComponent(planName);
+  window.location.href = `mailto:brandbadgeruk@gmail.com?subject=${subject}`;
+};
   </script>
 
   <style scoped>
