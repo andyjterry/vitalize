@@ -15,21 +15,21 @@
               <p class="mt-4 text-sm leading-6 text-gray-300">
                 <b>Ideal For:</b> {{ plan.idealFor }}
               </p>
-              <div class="mt-6 flex items-baseline gap-x-1">
-                <span class="text-4xl font-bold tracking-tight text-white">£{{ plan.initialCost }}</span>
-                <div class="text-sm font-semibold leading-6 text-gray-300">
-                    <span v-if="plan.monthlyCost.length" >Initial cost</span>
-                    <span v-if="!plan.monthlyCost.length" >cost</span>
-                </div>
+              <div class="flex flex-row justify-between items-end">
+              <div class="flex flex-col">
+                <p class="text-sm font-semibold leading-6 text-gray-300">from</p>
+                <p class="text-4xl font-bold tracking-tight text-white">£{{ plan.initialCost }}</p>                
               </div>
               <div v-if="plan.monthlyCost.length">
-              <p class="text-primary text-sm mt-4">then only...</p>
-              <p class="flex items-baseline gap-x-1">
+                
+                <p class="flex items-baseline gap-x-1">
+                  <span class="text-sm font-semibold leading-6 text-gray-300">then only </span>
                 <span class="text-2xl font-bold tracking-tight text-white">£{{ plan.monthlyCost }}</span>
                 <span class="text-sm font-semibold leading-6 text-gray-300">per month</span>
               </p>
             </div>
             <div v-else>
+            </div>
                 <br/><br /><br/>
             </div>
               <a href="#" class="mt-6 block rounded-md bg-white/10 text-white hover:bg-white/20 py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">Get Started</a>

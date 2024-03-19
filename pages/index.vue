@@ -25,7 +25,7 @@ import reviews from '~/components/sections/Reviews.vue';
 const ctaButtons = [
   { label: 'WhatsApp', url: 'https://wa.me/447447460461' },
   { label: 'Email', url: 'mailto:info@brandbadger.co.uk' },
-  { label: 'Call', url: 'tel:447447470471' },
+  { label: 'Call', url: 'https://call.whatsapp.com/voice/55iGKhAghKyVOlCaui2ObL' },
   // Add more buttons as needed
 ];
 </script>
