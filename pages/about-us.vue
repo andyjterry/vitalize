@@ -77,7 +77,7 @@
                 <h3 class="text-xl font-bold leading-8 tracking-tight">
                   {{ person.name }}
                 </h3>
-                <p class="text-sm text-orange-700 font-semibold mb-3">{{ person.businessRole }}</p>
+                <!-- <p class="text-sm text-orange-700 font-semibold mb-3">{{ person.businessRole }}</p> -->
                 <p class="text-base leading-7 font-semibold">
                   {{ person.role }}
                 </p>
