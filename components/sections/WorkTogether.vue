@@ -11,7 +11,7 @@
             <p class="mt-2 text-lg leading-8 text-gray-600">At Brand Badger, we're all about getting the job done right. You have a vision for your brand and website, and we have the tools and know-how to make it happen. No fluff, no false promises—just solid work that speaks for itself. Share your project details with us, and we'll figure out the best way to bring your ideas to life. Let's make your brand stand out and your website shine.
 
 </p>
-            <form  method="POST" action="https://formspree.io/f/xrgnldko" class="mt-16 space-y-6">
+<form @submit.prevent="handleSubmit" class="mt-16 space-y-6">
             <div>
               <label for="name">Name</label>
               <input type="text" name="name" id="name" v-model="form.name" required>
@@ -68,9 +68,9 @@
   }
   </style>
   
-
-<script setup>
-import { ref, reactive } from 'vue';
+  <script setup>
+import { reactive } from 'vue';
+import { useNuxtApp } from '#app';
 
 const form = reactive({
   name: '',
@@ -80,8 +80,30 @@ const form = reactive({
   selection: '',
   additionalInfo: '',
   budget: 500,
-  });
-  const showBudgetSlider = ref(false);
+});
 
+const { $mail } = useNuxtApp();
 
-  </script>
+const handleSubmit = async () => {
+  try {
+    await $mail.send({
+      subject: 'New Inquiry from Website',
+      to: 'hello@brandbadger.co.uk',
+      // The template or text can depend on your setup in nuxt.config.js
+      text: `
+        Name: ${form.name}
+        Business Name: ${form.businessName}
+        Email: ${form.email}
+        Phone: ${form.phone}
+        Additional Info: ${form.additionalInfo}
+        Budget: £${form.budget}
+      `,
+    });
+    alert('Your inquiry has been sent successfully.');
+    // Reset form or navigate to thank-you page here
+  } catch (error) {
+    console.error('Failed to send the email:', error);
+    alert('Failed to send your inquiry.');
+  }
+};
+</script>

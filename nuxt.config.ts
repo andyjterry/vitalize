@@ -4,6 +4,20 @@ import svgLoader from 'vite-svg-loader'
 
 // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 export default {
+      mail: {
+        message: {
+          to: 'hello@brandbadger.co.uk',
+        },
+        smtp: {
+          host: "smtp.ionos.co.uk",
+          port: 465,
+          auth: {
+            user: "hello@brandbadger.co.uk",
+            pass: process.env.EMAIL_PASSWORD, // Use the environment variable
+          },
+          secure: true, // Use SSL/TLS for secure connection
+        },
+      },
     server: {
         host: '0.0.0.0' // This allows connections from any IP address
       },
@@ -33,7 +47,7 @@ export default {
     head: {
     },
 
-    modules: ['@nuxtjs/tailwindcss'],
+    modules: ['@nuxtjs/tailwindcss','nuxt-mail'],
     styleResources: {
         scss: [
             '~assets/style/_transitions.scss',
