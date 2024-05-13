@@ -8,7 +8,7 @@
       </div>
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-xl text-center">
-          <h class="">Testimonials</h>
+          <h1 class="">Testimonials</h1>
           <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We have worked with some amazing clients</p>
         </div>
         <div class="text-center mt-12">

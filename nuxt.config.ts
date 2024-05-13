@@ -45,6 +45,19 @@ export default {
         }
     },
     head: {
+      title: 'Brand Badger | Web Development & Branding Solutions for UK Businesses',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Brand Badger specializes in bespoke web development and branding solutions tailored for startups, small to medium businesses, and tradespeople in North Tyneside and across the UK.' },
+        { name: 'keywords', content: 'web development, branding, digital solutions, North Tyneside, UK businesses, startup support, tradespeople, bespoke design' },
+        // Add more meta tags as needed
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        // Add other links as needed
+      ],
+      // Add script tags if needed
     },
 
     modules: ['@nuxtjs/tailwindcss','nuxt-mail'],
@@ -59,12 +72,10 @@ export default {
     ],
 
     tailwindcss: {
-        cssPath: '~/assets/css/tailwind.css',
-        configPath: 'tailwind.config',
-        exposeConfig: false,
-        config: {},
-        injectPosition: 0,
-        viewer: true,
+      cssPath: '~/assets/css/tailwind.css',
+      // The `injectPosition` and additional options should be removed if not used correctly
+      configPath: 'tailwind.config.js',
+      viewer: true,
     },
     postcss: {
         plugins: {

@@ -16,9 +16,7 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
-
-defineProps({
+const props = defineProps({
   title: String,
   text: String,
   buttons: Array,

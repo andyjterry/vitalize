@@ -68,42 +68,33 @@
   }
   </style>
   
+
   <script setup>
-import { reactive } from 'vue';
-import { useNuxtApp } from '#app';
+import { ref, reactive } from 'vue';
+import axios from 'axios'; // Make sure axios is installed and imported
 
 const form = reactive({
   name: '',
   businessName: '',
   email: '',
   phone: '',
-  selection: '',
   additionalInfo: '',
   budget: 500,
 });
 
-const { $mail } = useNuxtApp();
-
 const handleSubmit = async () => {
   try {
-    await $mail.send({
-      subject: 'New Inquiry from Website',
-      to: 'hello@brandbadger.co.uk',
-      // The template or text can depend on your setup in nuxt.config.js
-      text: `
-        Name: ${form.name}
-        Business Name: ${form.businessName}
-        Email: ${form.email}
-        Phone: ${form.phone}
-        Additional Info: ${form.additionalInfo}
-        Budget: £${form.budget}
-      `,
-    });
-    alert('Your inquiry has been sent successfully.');
-    // Reset form or navigate to thank-you page here
+    const response = await axios.post('/api/sendEmail', form);
+    if (response.status === 200) {
+      alert('Message sent successfully!');
+      // Reset form or perform other actions upon success
+    } else {
+      // Handle failure
+      alert('Failed to send message. Please try again later.');
+    }
   } catch (error) {
-    console.error('Failed to send the email:', error);
-    alert('Failed to send your inquiry.');
+    console.error('Error sending message:', error);
+    alert('Error sending message. Please try again later.');
   }
 };
 </script>

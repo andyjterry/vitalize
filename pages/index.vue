@@ -14,6 +14,7 @@
 </template>
 
 <script setup>
+import { CONTACT_INFO, SOCIAL_LINKS } from '~/composables/config';
 import cta from '~/components/sections/cta.vue';
 import Process from '~/components/sections/Process.vue';
 import Faq from '~/components/sections/Faq.vue';
@@ -23,9 +24,9 @@ import details from '~/data/details.json'
 import reviews from '~/components/sections/Reviews.vue';
 
 const ctaButtons = [
-  { label: 'WhatsApp', url: 'https://wa.me/447447460461' },
-  { label: 'Email', url: 'mailto:info@brandbadger.co.uk' },
-  { label: 'Call', url: 'https://call.whatsapp.com/voice/55iGKhAghKyVOlCaui2ObL' },
+  { label: 'WhatsApp', url: CONTACT_INFO.whatsappText },
+  { label: 'Email', url: `mailto:${CONTACT_INFO.email}` },
+  { label: 'Call', url: CONTACT_INFO.whatsappCall },
   // Add more buttons as needed
 ];
 </script>
