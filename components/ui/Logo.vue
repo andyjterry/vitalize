@@ -1,8 +1,8 @@
 <template>
     <div class="relative">
     <div class="spartan font-bold text-4xl p-2 flex flex-row items-center justify-center">
-        <span class="text-secondary">brand</span>
-        <span class="text-dark">badger</span>
+        <span class="text-secondary">Viking</span>
+        <span class="text-dark">Vitality</span>
     </div>
     <!-- <div class="code"><span>&lt;</span> /<span>&gt;</span></div> -->
 </div>

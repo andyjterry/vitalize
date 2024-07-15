@@ -1,23 +1,24 @@
 {
   "details": {
+    "businessName": "Viking Vitality",
     "phone": "+447447470471",
-    "email": "hello@brandbadger.com",
+    "email": "hello@vikingvitality.com",
     "address": "114 Lutterworth Road, Newcastle Upon Tyne, NE12 8QS",
     "town": "Newcastle",
-    "facebook": "https://facebook.com/brandbadgeruk",
-    "instagram": "https://instagram.com/brandbadger",
+    "facebook": "https://facebook.com/vikingvitalityuk",
+    "instagram": "https://instagram.com/vikingvitality",
     "github": "https://github.com/andyjterry"
   },
   "socialMedia": [
     {
       "id": 1,
       "name": "instagram",
-      "description": "https://instagram.com/brandbadger"
+      "description": "https://instagram.com/vikingvitality"
     },
     {
       "id": 2,
       "name": "facebook",
-      "description": "https://facebook.com/brandbadger"
+      "description": "https://facebook.com/vikingvitality"
     },
     {
       "id": 3,
