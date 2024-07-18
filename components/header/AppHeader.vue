@@ -27,15 +27,16 @@
           </a>
         </div>
         <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">Enhance Your Vitality with Vitalize Prime</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Experience the benefits of our premium vitamin injections tailored for fitness, health, and overall wellness. Join now for exclusive benefits and special introductory rates!</p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <a href="#" class="rounded-md bg-secondary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400">Book Now</a>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Experience the benefits of our premium vitamin injections tailored for fitness, health, and overall wellness. Save more with our subscription plans and enjoy exclusive benefits and special introductory rates. <br /><br />Join now and take the first step towards a healthier, more vibrant you!</p>
+<div class="mt-10 flex items-center gap-x-6">
+
+          <a href="#" class="rounded-md bg-secondary px-3.5 py-2.5 text-sm font-semibold text-dark shadow-sm hover:bg-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400">Book Now</a>
           <a href="#" class="text-sm font-semibold leading-6 text-white">Learn More <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
         <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-          <img src="/img/man.png" alt="Vitalize Prime Services" class="h-[56rem] rounded-md md:block hidden" />
+          <img src="/img/manworkingout.webp" alt="Vitalize Prime Services" class="w-[50rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10 hidden md:block opacity-60" />
         </div>
       </div>
     </div>
