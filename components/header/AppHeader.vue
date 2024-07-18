@@ -19,7 +19,7 @@
         <img class="h-30 " src="/svg/lightlogo.svg" alt="Vitalize Prime" />
         <div class="mt-24 sm:mt-32 lg:mt-16">
           <a href="#" class="inline-flex space-x-6">
-            <span class="rounded-full bg-secondary/10 px-3 py-1 text-sm font-semibold leading-6 bg-secondary ring-1 ring-inset ring-orange-500/20">What's new</span>
+            <span class="rounded-full bg-secondary/10 px-3 py-1 text-sm font-semibold leading-6 bg-secondary ring-1 ring-inset ring-orange-500/20 hidden md:block">What's new</span>
             <span class="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-300">
               <span>Special Introductory Offers</span>
               <ChevronRightIcon class="h-5 w-5 text-gray-500" aria-hidden="true" />
