@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Vitamin B12 Injection",
+    "price": "£29",
+    "description": "Boosts energy levels, improves metabolism, and enhances brain function.",
+    "imageSrc": "/product/b12.png",
+    "imageAlt": "Vitamin B12 Injection",
+    "bgColour": "#A1DED4",
+    "textColour": "#4D9B8D",
+    "href": "#"
+  },
+  {
+    "id": 2,
+    "name": "Vitamin C Injection",
+    "price": "£39",
+    "description": "Enhances immune function, promotes skin health, and supports overall wellness.",
+    "imageSrc": "/product/vitamin_c.png",
+    "imageAlt": "Vitamin C Injection",
+    "bgColour": "#B8D0EB",
+    "textColour": "#6D89B0",
+    "href": "#"
+  },
+  {
+    "id": 3,
+    "name": "Vitamin D Injection",
+    "price": "£39",
+    "description": "Supports bone health, boosts immune function, and improves mood.",
+    "imageSrc": "/product/vitamin_c.png",
+    "imageAlt": "Vitamin D Injection",
+    "bgColour": "#FAD1D3",
+    "textColour": "#C97578",
+    "href": "#"
+  },
+  {
+    "id": 4,
+    "name": "Biotin Injection",
+    "price": "£49",
+    "description": "Supports healthy hair, skin, and nails, and aids in metabolizing fats and proteins.",
+    "imageSrc": "/product/biotin.png",
+    "imageAlt": "Biotin Injection",
+    "bgColour": "#E8E2B6",
+    "textColour": "#A89B48",
+    "href": "#"
+  },
+  {
+    "id": 5,
+    "name": "Magnesium Injection",
+    "price": "£39",
+    "description": "Supports muscle function, reduces cramps, and enhances overall energy production.",
+    "imageSrc": "/product/magnesium.png",
+    "imageAlt": "Magnesium Injection",
+    "bgColour": "#EBC3D8",
+    "textColour": "#AD6F85",
+    "href": "#"
+  },
+  {
+    "id": 6,
+    "name": "Multivitamin Complex Injection",
+    "price": "£39",
+    "description": "Combines essential vitamins to support overall health and well-being.",
+    "imageSrc": "/product/multivitamin.png",
+    "imageAlt": "Multivitamin Complex Injection",
+    "bgColour": "#F6D5D1",
+    "textColour": "#C9887D",
+    "href": "#"
+  }
+]
