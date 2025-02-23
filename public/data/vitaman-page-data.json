@@ -1,0 +1,237 @@
+[
+  {
+    "id": "vitamin-a",
+    "title": "Vitamin A",
+    "whyYouNeed": "Vitamin A is essential for maintaining healthy vision, immune function, and skin health.",
+    "benefits": [
+      "Improves vision",
+      "Boosts immune system",
+      "Promotes skin health",
+      "Supports cell growth",
+      "Maintains heart, lungs, and kidneys",
+      "Antioxidant properties",
+      "Supports reproduction"
+    ],
+    "whoNeeds": ["People with poor vision", "Individuals with a weak immune system", "People with skin conditions"],
+    "price": "£39 per injection",
+    "image": "/img/vitamin/vitamin-a.jpg",
+    "faqs": [
+      {
+        "question": "What are the side effects of Vitamin A injections?",
+        "answer": "Common side effects may include headache, nausea, or mild allergic reactions. Consult with a healthcare provider for a complete list."
+      },
+      {
+        "question": "How often should I get Vitamin A injections?",
+        "answer": "The frequency of Vitamin A injections can vary depending on individual needs. It's best to consult with a healthcare provider for personalized recommendations."
+      }
+    ],
+    "chemicals": [
+      "Retinol",
+      "Beta-carotene",
+      "Palmitate"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=vitamin-a",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  },
+  {
+    "id": "vitamin-b",
+    "title": "Vitamin B",
+    "whyYouNeed": "Vitamin B is important for energy production, brain function, and cell metabolism.",
+    "benefits": [
+      "Boosts energy levels",
+      "Improves mood",
+      "Supports brain health",
+      "Promotes cell health",
+      "Maintains healthy skin and hair",
+      "Reduces fatigue",
+      "Enhances immune function"
+    ],
+    "whoNeeds": ["Individuals with low energy", "People experiencing mood swings", "Those with poor cognitive function"],
+    "price": "£39 per injection",
+    "image": "/img/vitamin/vitamin-b.jpg",
+    "faqs": [
+      {
+        "question": "Can Vitamin B injections help with fatigue?",
+        "answer": "Yes, Vitamin B injections can help boost energy levels and reduce fatigue."
+      },
+      {
+        "question": "Are there any interactions with Vitamin B injections?",
+        "answer": "Vitamin B injections can interact with certain medications. Consult with a healthcare provider for detailed information."
+      }
+    ],
+    "chemicals": [
+      "B1 (Thiamine)",
+      "B2 (Riboflavin)",
+      "B3 (Niacin)",
+      "B6 (Pyridoxine)",
+      "B9 (Folate)",
+      "B12 (Cobalamin)"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=vitamin-b",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  },
+  {
+    "id": "vitamin-b12",
+    "title": "Vitamin B12",
+    "whyYouNeed": "Vitamin B12 is crucial for red blood cell formation, neurological function, and DNA synthesis.",
+    "benefits": [
+      "Supports red blood cell formation",
+      "Maintains healthy nerve cells",
+      "Aids in DNA synthesis",
+      "Boosts energy levels",
+      "Improves mood and cognitive function",
+      "Helps prevent anemia"
+    ],
+    "whoNeeds": ["Individuals with vitamin B12 deficiency", "Older adults", "Vegans and vegetarians"],
+    "price": "£39 per injection",
+    "image": "/img/vitamin/vitamin-b12.jpg",
+    "faqs": [
+      {
+        "question": "How does Vitamin B12 help with anemia?",
+        "answer": "Vitamin B12 is essential for red blood cell formation. A deficiency can lead to anemia."
+      },
+      {
+        "question": "Can I get Vitamin B12 from my diet?",
+        "answer": "Vitamin B12 is primarily found in animal products. Vegans and vegetarians may need supplements or injections."
+      }
+    ],
+    "chemicals": [
+      "Cobalamin",
+      "Methylcobalamin",
+      "Hydroxocobalamin"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=vitamin-b12",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  },
+  {
+    "id": "biotin",
+    "title": "Biotin",
+    "whyYouNeed": "Biotin, also known as vitamin B7, helps with the metabolism of fats, carbohydrates, and proteins and is important for healthy hair, skin, and nails.",
+    "benefits": [
+      "Supports metabolism of macronutrients",
+      "Promotes healthy hair and skin",
+      "Strengthens nails",
+      "Helps regulate blood sugar levels",
+      "Supports embryonic growth during pregnancy"
+    ],
+    "whoNeeds": ["People with brittle nails", "Individuals with hair loss", "Those with skin rashes"],
+    "price": "£39 per injection",
+    "image": "/img/vitamin/biotin.jpg",
+    "faqs": [
+      {
+        "question": "What are the benefits of Biotin for hair health?",
+        "answer": "Biotin can promote hair growth and strengthen hair follicles."
+      },
+      {
+        "question": "Are there any side effects of Biotin?",
+        "answer": "Biotin is generally considered safe, but high doses may cause skin rashes or gastrointestinal issues."
+      }
+    ],
+    "chemicals": [
+      "Biotin",
+      "D-Biotin"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=biotin",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  },
+  {
+    "id": "magnesium",
+    "title": "Magnesium",
+    "whyYouNeed": "Magnesium is essential for muscle and nerve function, bone health, and energy production.",
+    "benefits": [
+      "Supports muscle and nerve function",
+      "Maintains healthy bones",
+      "Aids in energy production",
+      "Regulates blood pressure",
+      "Helps with sleep quality",
+      "Supports heart health"
+    ],
+    "whoNeeds": ["Individuals with muscle cramps", "People with sleep disorders", "Those with high blood pressure"],
+    "price": "£39 per injection",
+    "image": "/img/vitamin/magnesium.jpg",
+    "faqs": [
+      {
+        "question": "Can Magnesium help with muscle cramps?",
+        "answer": "Yes, magnesium can help reduce muscle cramps and spasms."
+      },
+      {
+        "question": "How can I ensure I get enough Magnesium?",
+        "answer": "Ensure a balanced diet with magnesium-rich foods or consider supplements if needed."
+      }
+    ],
+    "chemicals": [
+      "Magnesium sulfate",
+      "Magnesium chloride",
+      "Magnesium citrate"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=magnesium",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  },
+  {
+    "id": "b-complex",
+    "title": "B Complex",
+    "whyYouNeed": "B Complex vitamins are a group of essential nutrients that play a vital role in energy production, brain health, and cell metabolism.",
+    "benefits": [
+      "Boosts energy levels",
+      "Supports brain function",
+      "Promotes healthy skin and hair",
+      "Aids in red blood cell formation",
+      "Helps manage stress",
+      "Enhances mood"
+    ],
+    "whoNeeds": ["Individuals with low energy", "People experiencing stress or anxiety", "Those with skin or hair issues"],
+    "price": "£49 per injection",
+    "image": "/img/vitamin/b-complex.jpg",
+    "faqs": [
+      {
+        "question": "What are the main components of B Complex vitamins?",
+        "answer": "B Complex includes B1, B2, B3, B6, B9, and B12, each with specific benefits."
+      },
+      {
+        "question": "Can B Complex vitamins help with stress?",
+        "answer": "Yes, B Complex vitamins can help manage stress and improve mood."
+      }
+    ],
+    "chemicals": [
+      "Thiamine",
+      "Riboflavin",
+      "Niacin",
+      "Pyridoxine",
+      "Folate",
+      "Cobalamin"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=b-complex",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  },
+  {
+    "id": "hayfever",
+    "title": "Hayfever Relief",
+    "whyYouNeed": "Hayfever relief injections can help alleviate symptoms of seasonal allergies, including runny nose, sneezing, and itchy eyes.",
+    "benefits": [
+      "Reduces nasal congestion",
+      "Alleviates sneezing",
+      "Relieves itchy eyes and throat",
+      "Improves overall comfort during allergy season",
+      "Supports immune response to allergens"
+    ],
+    "whoNeeds": ["People with seasonal allergies", "Individuals experiencing severe hayfever symptoms"],
+    "price": "£45 per injection",
+    "image": "/img/vitamin/hayfever.jpg",
+    "faqs": [
+      {
+        "question": "How effective are Hayfever relief injections?",
+        "answer": "They are generally effective at reducing symptoms of hayfever and providing relief during allergy season."
+      },
+      {
+        "question": "How often should I get Hayfever relief injections?",
+        "answer": "The frequency can vary based on individual symptoms. Consult with a healthcare provider for guidance."
+      }
+    ],
+    "chemicals": [
+      "Antihistamines",
+      "Steroids"
+    ],
+    "bookingLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163&serviceId=hayfever",
+    "membershipLink": "https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0/paid-plans?pId=1296163"
+  }
+]

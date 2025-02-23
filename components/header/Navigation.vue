@@ -5,10 +5,10 @@
       aria-label="Global"
       style=" backdrop-filter: blur(2px);"
     >
-      <div class="flex lg:flex-1">
+      <div class="flex lg:flex-1 mx-auto ">
         <a href="/" class="">
-          <span class="sr-only">brandbadger Logo</span>
-          <logo />
+          <span class="sr-only">Vitaman Prime Logo</span>
+          <Logo />
         </a>
       </div>
       <div class="flex lg:hidden">
@@ -32,7 +32,7 @@
         </a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <UiButton label="Lets Talk" url="/contact" colour="secondary" size="lg" />
+        <UiButton label="Book Now!" url="https://www.fresha.com/a/vitaman-prime-newcastle-upon-tyne-newcastle-upon-tyne-uk-5-charlotte-square-p4d8p3r0" colour="secondary" size="lg" />
       </div>
     </nav>
     <Dialog as="div" class="lg:hidden" @close="mobileMenuOpen = false" :open="mobileMenuOpen">
@@ -44,7 +44,7 @@
       >
         <div class="mx-auto flex max-w-7xl md:max-w-none items-center justify-between sm:p-6 lg:px-8">
           <a href="/" class="">
-            <span class="sr-only">brandbadger Logo</span>
+            <span class="sr-only">Vitaman Prime Logo</span>
             <logo />
           </a>
           <button
